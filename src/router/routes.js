@@ -61,6 +61,14 @@ export default [
     component: () => import('@/pages/animation/TestChatMarkdown.vue')
   },
   {
+    path: '/chat-gpt',
+    component: () => import('@/pages/chat/ChatGPT.vue')
+  },
+  {
+    path: '/circle',
+    component: () => import('@/pages/resume/circle.vue')
+  },
+  {
     path: '/error',
     component: () => import('@/pages/ErrorPage.vue')
   },
