@@ -44,7 +44,7 @@ async function onSubmit() {
 </script>
 
 <template>
-  <AuthLayout title="登录" subtitle="使用 Nest 后端账号登录">
+  <AuthLayout>
     <form class="auth-form" @submit.prevent="onSubmit">
       <div class="field">
         <label class="field-label" for="name">用户名</label>

@@ -24,22 +24,45 @@ const router = createRouter({
       meta: { guestOnly: true },
     },
     {
-      path: '/home',
-      name: 'home',
-      component: () => import('@/views/HomeView.vue'),
+      path: '/',
+      component: () => import('@/layouts/AppLayout.vue'),
       meta: { requiresAuth: true },
-    },
-    {
-      path: '/images',
-      name: 'images',
-      component: () => import('@/views/ImagesView.vue'),
-      meta: { requiresAuth: true },
-    },
-    {
-      path: '/boss-crawl',
-      name: 'boss-crawl',
-      component: () => import('@/views/BossCrawlView.vue'),
-      meta: { requiresAuth: true },
+      children: [
+        {
+          path: 'home',
+          name: 'home',
+          component: () => import('@/views/HomeView.vue'),
+        },
+        {
+          path: 'images',
+          name: 'images',
+          component: () => import('@/views/ImagesView.vue'),
+        },
+        {
+          path: 'boss-crawl',
+          name: 'boss-crawl',
+          component: () => import('@/views/BossCrawlView.vue'),
+        },
+        {
+          path: 'admin',
+          redirect: { name: 'admin-users' },
+        },
+        {
+          path: 'admin/users',
+          name: 'admin-users',
+          component: () => import('@/views/admin/UsersView.vue'),
+        },
+        {
+          path: 'admin/roles',
+          name: 'admin-roles',
+          component: () => import('@/views/admin/RolesView.vue'),
+        },
+        {
+          path: 'admin/permissions',
+          name: 'admin-permissions',
+          component: () => import('@/views/admin/PermissionsView.vue'),
+        },
+      ],
     },
   ],
 })

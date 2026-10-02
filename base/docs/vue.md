@@ -1,12 +1,11 @@
 # Vue
 
-构建UI的框架，基于HTML、CSS和JavaScript; 提供了一套声明式的、组件化的编程模型。
+UI框架 声明式、组件化编程模型
 
-声明式渲染 Vue 基于标准 HTML 拓展了一套模板语法，可以声明式地描述最终输出的 HTML 和 JavaScript 状态之间的关系。
-响应性 Vue 会自动跟踪 JavaScript 状态并在其发生变化时响应式地更新 DOM。
+- 声明式渲染 Vue 基于标准 HTML 拓展了一套模板语法，可以声明式地描述最终输出的 HTML 和 JavaScript 状态之间的关系。
+- 响应式 Vue 会自动跟踪 JavaScript 状态并在其发生变化时响应式地更新 DOM。
 
-SFC
-Vue 的单文件组件会将一个组件的逻辑 (JavaScript)，模板 (HTML) 和样式 (CSS) 封装在同一个文件里
+SFC 将一个组件的逻辑 (JavaScript)，模板 (HTML) 和样式 (CSS) 封装在同一个文件里
 
 ## 构建工具
 
@@ -19,12 +18,8 @@ pnpm create vue@latest
 - 全局构建版 在全局对象上通过Vue对象暴露API
 - ES模块版 可以使用import maps来简化模块路径
 
-VSC插件
 
-- Volar
-- es6-string-html
-
-## API 学习
+## API
 
 ```javascript
 app = createApp(RootComponent, rootProp?);
@@ -46,7 +41,7 @@ app.mount(dom | selector); // 返回值是根组件实例而非应用实例
 
 导入的 API 函数来描述组件逻辑
 
-只是同一个底层系统所提供的两套不同的接口，选项式 API 是在组合式 API 的基础上实现的。
+只是同一个底层系统所提供的两套不同的接口，`选项式 API 是在组合式 API 的基础上实现的`。
 
 render > template > DOM Template
 

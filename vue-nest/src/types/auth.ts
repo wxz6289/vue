@@ -29,7 +29,4 @@ export interface SignUpPayload {
   captchaCode: string
 }
 
-export interface ApiErrorBody {
-  statusCode?: number
-  message?: string | string[]
-}
+export type { ApiErrorBody, ApiResponse } from '@/types/api'

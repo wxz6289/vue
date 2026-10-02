@@ -13,16 +13,6 @@ const { loading, refreshAll } = useBossCrawl()
     </div>
     <div class="flex flex-wrap items-center gap-2">
       <Button type="button" icon="pi pi-refresh" label="刷新" :loading="loading" @click="refreshAll()" />
-      <RouterLink v-slot="{ navigate }" to="/home" custom>
-        <Button
-          type="button"
-          outlined
-          severity="secondary"
-          icon="pi pi-home"
-          label="返回首页"
-          @click="navigate"
-        />
-      </RouterLink>
     </div>
   </header>
 </template>

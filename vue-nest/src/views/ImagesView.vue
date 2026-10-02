@@ -173,7 +173,6 @@ onMounted(() => {
         <h1>图片管理</h1>
         <p>本地上传至阿里云 OSS，或维护外链图片（不存入 OSS）</p>
       </div>
-      <RouterLink class="btn-secondary" to="/home">返回首页</RouterLink>
     </header>
 
     <p v-if="error" class="form-error">{{ error }}</p>
