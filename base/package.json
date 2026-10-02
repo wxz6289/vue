@@ -1,0 +1,27 @@
+{
+  "name": "learn-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.5.0",
+    "highlight.js": "^11.11.1",
+    "lockr": "0.8.5",
+    "marked": "^16.1.1",
+    "pinia": "3.0.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "28.0.6",
+    "@vitejs/plugin-vue": "6.0.0",
+    "@vue-macros/reactivity-transform": "1.1.6",
+    "vite": "7.0.5"
+  },
+  "packageManager": "yarn@3.6.0+sha512.418e45c2268c4d6b69a28f3939084b5853d5f392c43c0b5588bd1995a96e328414ae4b7777a8980c64bad4328c52586ff879b289f98ae65372a55fa4d0ff70dd"
+}

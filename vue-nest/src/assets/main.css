@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
+@layer base {
+  :root {
+    --spring-bg: #f7fbf8;
+    --spring-surface: #ffffff;
+    --spring-text: #2a4036;
+    --spring-muted: #6b8578;
+    --spring-border: #dceee4;
+    --spring-mint: #6db89a;
+    --spring-mint-deep: #3f8f72;
+    --spring-mint-soft: #e8f5ef;
+    --spring-pink: #f4a9b8;
+    --spring-pink-deep: #d9788f;
+    --spring-pink-soft: #fdf0f3;
+    --spring-sky: #8ec5da;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family:
+      'Segoe UI',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    @apply min-h-screen text-surface-900;
+    background: var(--spring-bg);
+  }
+}
